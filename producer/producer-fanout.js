@@ -9,7 +9,7 @@ const producer = kafka.producer();
 
 async function run() {
   await producer.connect();
-  console.log("🚀 Producer connected");
+  console.log("🚀Producer connected");
 
   let counter = 1;
 
