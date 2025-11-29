@@ -1,10 +1,11 @@
-# kafka-topic
+# Kafka Topic
 
-This repo to created to understand the concept of Kafka with fanout and queue based flow.
+This repository has been created to provide a clear and structured understanding of essential Kafka concepts, with a particular focus on _fanout messaging_ and _queue-based message processing_. It serves as a practical reference for developers who want to explore how Kafka producers and consumers interact within different messaging patterns.
 
-# Workflow
+## Workflow Overview
 
-- There is producer which has topic attached to it. It send messages to that topic name.
-- The consumers are listener where group name is tagged along with topic to listen to. Whenever there is message sent, its immediately invoked.
-- There is concept of fanout meaning there can be multiple workers listening to same topic. So, same message is distributed to all workers at the sametime.
-- In queue based, only message flows to only one consumer.
+### 1. Producer and Topic Interaction
+
+A **producer** is responsible for generating and publishing messages to a designated **Kafka topic**.  
+Each topic acts as a logical communication channel where data is stored temporarily and made available for consumers.  
+Producers send messages asynchronously, ensuring high throughput, scalability, and reliability.
